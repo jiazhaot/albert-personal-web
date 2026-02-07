@@ -19,6 +19,7 @@
           <h1 class="name">Albert Zhang</h1>
           <p class="role">Food Scientist · Photographer</p>
           <p class="tagline">
+            <!-- <span class="tagline-icon" aria-hidden="true">◎</span> -->
             A dedicated photographer focused on everyday life and natural
             landscapes, capturing quiet stories through light.
           </p>
@@ -77,6 +78,7 @@
       <main class="content" role="main">
         <section id="about" class="panel" aria-labelledby="about-title">
           <h2 id="about-title">About Me</h2>
+          <div class="section-rule" aria-hidden="true"></div>
           <p>
             I am a food scientist with a strong foundation in product
             development, ingredient functionality, and sensory evaluation. My
@@ -102,31 +104,41 @@
 
         <section id="gallery" class="panel" aria-labelledby="gallery-title">
           <h2 id="gallery-title">Photo Gallery</h2>
+          <div class="section-rule" aria-hidden="true"></div>
           <p class="gallery-note">
             Live Instagram posts are displayed below via the Elfsight Instagram
             Feed plugin. Replace the placeholder app ID with your own widget ID
             in the HTML to activate the feed.
           </p>
+          <div class="gallery-skeleton" id="gallery-skeleton" aria-hidden="true">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
           <div
             class="elfsight-app-PLACEHOLDER"
             data-elfsight-app-lazy
             aria-label="Instagram Feed"
           ></div>
           <div class="gallery-fallback" id="gallery-fallback" role="status">
-            Failed to load Instagram posts, please try again later.
+            Instagram posts are taking longer to load. Please check back soon.
           </div>
         </section>
 
         <section id="cv" class="panel" aria-labelledby="cv-title">
           <h2 id="cv-title">My CV</h2>
+          <div class="section-rule" aria-hidden="true"></div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Personal Information</h3>
             <p>Albert Zhang · Food Scientist · Photographer</p>
             <p>San Francisco, CA · albert@example.com</p>
           </div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Professional Summary</h3>
             <p>
               Food scientist with experience in formulation, process
@@ -136,7 +148,7 @@
             </p>
           </div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Work Experience</h3>
             <div class="cv-item">
               <p class="cv-role">Senior Food Scientist — Harvest Labs</p>
@@ -166,7 +178,7 @@
             </div>
           </div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Education</h3>
             <div class="cv-item">
               <p class="cv-role">M.S. Food Science — University of California</p>
@@ -178,7 +190,7 @@
             </div>
           </div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Skills</h3>
             <ul class="cv-list">
               <li>Formulation and ingredient functionality</li>
@@ -190,7 +202,7 @@
             </ul>
           </div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Awards &amp; Certifications</h3>
             <ul class="cv-list">
               <li>Institute of Food Technologists — Product Development Award</li>
@@ -198,7 +210,7 @@
             </ul>
           </div>
 
-          <div class="cv-block">
+          <div class="cv-block cv-card">
             <h3>Additional Information</h3>
             <p>
               Volunteer mentor for local photography meetups and portfolio
