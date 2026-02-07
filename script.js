@@ -1,25 +1,41 @@
 const navLinks = Array.from(document.querySelectorAll('.nav-link'));
-const panels = Array.from(document.querySelectorAll('.panel'));
+const sections = Array.from(document.querySelectorAll('.panel'));
 const fallback = document.getElementById('gallery-fallback');
 
-const showSection = (sectionId) => {
-  panels.forEach((panel) => {
-    const isTarget = panel.id === sectionId;
-    panel.classList.toggle('is-visible', isTarget);
-  });
-
+const setActiveLink = (sectionId) => {
   navLinks.forEach((link) => {
-    link.classList.toggle('is-active', link.dataset.section === sectionId);
+    const target = link.getAttribute('href')?.replace('#', '');
+    link.classList.toggle('is-active', target === sectionId);
   });
 };
 
 navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    showSection(link.dataset.section);
+  link.addEventListener('click', (event) => {
+    const targetId = link.getAttribute('href');
+    if (!targetId) {
+      return;
+    }
+    event.preventDefault();
+    const target = document.querySelector(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setActiveLink(target.id);
+    }
   });
 });
 
-showSection('about');
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveLink(entry.target.id);
+      }
+    });
+  },
+  { rootMargin: '-30% 0px -55% 0px', threshold: 0 }
+);
+
+sections.forEach((section) => observer.observe(section));
 
 if (fallback) {
   setTimeout(() => {

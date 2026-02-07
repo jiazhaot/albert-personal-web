@@ -25,13 +25,9 @@
         </div>
 
         <nav class="nav" aria-label="Primary">
-          <button class="nav-link is-active" data-section="about">
-            About Me
-          </button>
-          <button class="nav-link" data-section="cv">My CV</button>
-          <button class="nav-link" data-section="gallery">
-            Photo Gallery
-          </button>
+          <a class="nav-link is-active" href="#about">About Me</a>
+          <a class="nav-link" href="#gallery">Photo Gallery</a>
+          <a class="nav-link" href="#cv">My CV</a>
         </nav>
 
         <div class="social">
@@ -79,11 +75,7 @@
       </aside>
 
       <main class="content" role="main">
-        <section
-          id="about"
-          class="panel is-visible"
-          aria-labelledby="about-title"
-        >
+        <section id="about" class="panel" aria-labelledby="about-title">
           <h2 id="about-title">About Me</h2>
           <p>
             I am a food scientist with a strong foundation in product
@@ -106,6 +98,23 @@
             archive of the paths I am exploring and the stories I am collecting
             along the way.
           </p>
+        </section>
+
+        <section id="gallery" class="panel" aria-labelledby="gallery-title">
+          <h2 id="gallery-title">Photo Gallery</h2>
+          <p class="gallery-note">
+            Live Instagram posts are displayed below via the Elfsight Instagram
+            Feed plugin. Replace the placeholder app ID with your own widget ID
+            in the HTML to activate the feed.
+          </p>
+          <div
+            class="elfsight-app-PLACEHOLDER"
+            data-elfsight-app-lazy
+            aria-label="Instagram Feed"
+          ></div>
+          <div class="gallery-fallback" id="gallery-fallback" role="status">
+            Failed to load Instagram posts, please try again later.
+          </div>
         </section>
 
         <section id="cv" class="panel" aria-labelledby="cv-title">
@@ -198,22 +207,7 @@
           </div>
         </section>
 
-        <section id="gallery" class="panel" aria-labelledby="gallery-title">
-          <h2 id="gallery-title">Photo Gallery</h2>
-          <p class="gallery-note">
-            Live Instagram posts are displayed below via the Elfsight Instagram
-            Feed plugin. Replace the placeholder app ID with your own widget ID
-            in the HTML to activate the feed.
-          </p>
-          <div
-            class="elfsight-app-PLACEHOLDER" 
-            data-elfsight-app-lazy
-            aria-label="Instagram Feed"
-          ></div>
-          <div class="gallery-fallback" id="gallery-fallback" role="status">
-            Failed to load Instagram posts, please try again later.
-          </div>
-        </section>
+        
       </main>
     </div>
   </body>

@@ -82,11 +82,13 @@ body {
   background: transparent;
   color: var(--text-main);
   font-size: 15px;
+  text-decoration: none;
   text-align: left;
   padding: 10px 14px;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
+  display: block;
 }
 
 .nav-link:hover {
@@ -143,16 +145,15 @@ body {
 }
 
 .panel {
-  display: none;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
 }
 
-.panel.is-visible {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
+.panel:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .panel h2 {
