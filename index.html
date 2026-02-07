@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Albert — Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script
+      defer
+      src="https://static.elfsight.com/platform/platform.js"
+    ></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="profile">
+          <img class="avatar" src="img/avatar.jpg" alt="Portrait of Albert" />
+          <h1 class="name">Albert Zhang</h1>
+          <p class="role">Food Scientist · Photographer</p>
+          <p class="tagline">
+            A dedicated photographer focused on everyday life and natural
+            landscapes, capturing quiet stories through light.
+          </p>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-link is-active" data-section="about">
+            About Me
+          </button>
+          <button class="nav-link" data-section="cv">My CV</button>
+          <button class="nav-link" data-section="gallery">
+            Photo Gallery
+          </button>
+        </nav>
+
+        <div class="social">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/yourname"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4v16h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.76-2.2 4.02 0 4.76 2.65 4.76 6.1V24h-4v-7.6c0-1.82-.03-4.16-2.54-4.16-2.55 0-2.94 1.98-2.94 4.03V24h-4V8z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/yourname/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm6.25-2.5a1.25 1.25 0 1 1-1.25-1.25A1.25 1.25 0 0 1 18.25 7z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="mailto:albert@example.com"
+            aria-label="Email"
+            title="Email"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M2 5h20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.2l10 6.2 10-6.2V7H2zm20 3.2-9.4 5.8a1.5 1.5 0 0 1-1.6 0L2 10.2V17h20v-6.8z"
+              />
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <main class="content" role="main">
+        <section
+          id="about"
+          class="panel is-visible"
+          aria-labelledby="about-title"
+        >
+          <h2 id="about-title">About Me</h2>
+          <p>
+            I am a food scientist with a strong foundation in product
+            development, ingredient functionality, and sensory evaluation. My
+            academic path combined chemistry and nutrition, and my professional
+            work has focused on translating research into reliable, scalable
+            food experiences.
+          </p>
+          <p>
+            Photography has been my second lens on the world for years. I am
+            drawn to everyday rituals, quiet urban corners, and the geometry of
+            natural landscapes. My camera practice sharpens my observation and
+            complements my scientific work by keeping me attentive to detail,
+            texture, and nuance.
+          </p>
+          <p>
+            I believe good work blends rigor with curiosity. Whether I am
+            optimizing a formula or documenting a morning walk, I aim to create
+            things that are clear, honest, and useful. This site is a small
+            archive of the paths I am exploring and the stories I am collecting
+            along the way.
+          </p>
+        </section>
+
+        <section id="cv" class="panel" aria-labelledby="cv-title">
+          <h2 id="cv-title">My CV</h2>
+
+          <div class="cv-block">
+            <h3>Personal Information</h3>
+            <p>Albert Zhang · Food Scientist · Photographer</p>
+            <p>San Francisco, CA · albert@example.com</p>
+          </div>
+
+          <div class="cv-block">
+            <h3>Professional Summary</h3>
+            <p>
+              Food scientist with experience in formulation, process
+              optimization, and sensory analysis. Proven track record in
+              cross-functional collaboration, consumer testing, and data-driven
+              product improvements.
+            </p>
+          </div>
+
+          <div class="cv-block">
+            <h3>Work Experience</h3>
+            <div class="cv-item">
+              <p class="cv-role">Senior Food Scientist — Harvest Labs</p>
+              <p class="cv-meta">Aug 2022 – Present</p>
+              <p>
+                Led reformulation projects to reduce sugar and sodium without
+                compromising flavor; coordinated pilot plant trials and scaled
+                up to commercial production.
+              </p>
+            </div>
+            <div class="cv-item">
+              <p class="cv-role">Food Scientist — Blue Meadow Foods</p>
+              <p class="cv-meta">Jul 2019 – Jul 2022</p>
+              <p>
+                Developed new snack prototypes, managed shelf-life testing, and
+                partnered with marketing on consumer insights to guide product
+                positioning.
+              </p>
+            </div>
+            <div class="cv-item">
+              <p class="cv-role">R&amp;D Associate — FreshScale Co.</p>
+              <p class="cv-meta">Jun 2017 – Jun 2019</p>
+              <p>
+                Supported laboratory experiments, conducted ingredient trials,
+                and documented results for regulatory and quality audits.
+              </p>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3>Education</h3>
+            <div class="cv-item">
+              <p class="cv-role">M.S. Food Science — University of California</p>
+              <p class="cv-meta">2017</p>
+            </div>
+            <div class="cv-item">
+              <p class="cv-role">B.S. Nutrition Science — Zhejiang University</p>
+              <p class="cv-meta">2015</p>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3>Skills</h3>
+            <ul class="cv-list">
+              <li>Formulation and ingredient functionality</li>
+              <li>Sensory evaluation and consumer testing</li>
+              <li>Process scale-up and pilot plant trials</li>
+              <li>Data analysis and experimental design</li>
+              <li>Adobe Lightroom and Photoshop</li>
+              <li>English and Mandarin (professional proficiency)</li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3>Awards &amp; Certifications</h3>
+            <ul class="cv-list">
+              <li>Institute of Food Technologists — Product Development Award</li>
+              <li>HACCP Certification</li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3>Additional Information</h3>
+            <p>
+              Volunteer mentor for local photography meetups and portfolio
+              reviews.
+            </p>
+          </div>
+        </section>
+
+        <section id="gallery" class="panel" aria-labelledby="gallery-title">
+          <h2 id="gallery-title">Photo Gallery</h2>
+          <p class="gallery-note">
+            Live Instagram posts are displayed below via the Elfsight Instagram
+            Feed plugin. Replace the placeholder app ID with your own widget ID
+            in the HTML to activate the feed.
+          </p>
+          <div
+            class="elfsight-app-PLACEHOLDER" 
+            data-elfsight-app-lazy
+            aria-label="Instagram Feed"
+          ></div>
+          <div class="gallery-fallback" id="gallery-fallback" role="status">
+            Failed to load Instagram posts, please try again later.
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
